@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import FiltersSidebar from '../components/FiltersSidebar';
 import { trains } from '../data/mockData';
 
 const TrainList = () => {
@@ -23,6 +24,7 @@ const TrainList = () => {
       </header>
 
       <div className="split-layout sidebar-layout">
+        <FiltersSidebar />
         
         <div className="train-list train-grid">
           {trains.map(train => (

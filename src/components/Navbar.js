@@ -16,9 +16,9 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-          <Link to="#bookings">My Bookings</Link>
-          <Link to="#pnr">PNR Status</Link>
-          <Link to="#help">Help</Link>
+          <Link to="/trains">Trains</Link>
+          <Link to="/seats/:id">Seats</Link>
+          <Link to="/passengers">Passenger Detail</Link>
         </div>
       </div>
 
